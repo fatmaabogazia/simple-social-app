@@ -1,4 +1,4 @@
-import style from './Comment.module.css';
+// import style from './Comment.module.css';
 import img from "../../assets/images/personPhoto.webp"
 import ModalUpdateComment from '../ModalUpdateComment/ModalUpdateComment';
 import axios from 'axios';

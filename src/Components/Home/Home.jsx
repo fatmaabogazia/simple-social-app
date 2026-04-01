@@ -1,22 +1,22 @@
 
 // import style from './Home.module.css'
 
-import { useContext, useEffect, useState } from "react"
+import { useContext,useEffect, useState } from "react"
 import { CounterContext } from "../../Context/CounterContext"
-import { PostsContext } from "../../Context/PostsContext";
+// import { PostsContext } from "../../Context/PostsContext";
 import axios from "axios";
 import { useQuery } from "@tanstack/react-query";
-import Comment from "../Comment/Comment";
+// import Comment from "../Comment/Comment";
 import { Link } from "react-router-dom";
 import ModalCreateComment from "../ModalCreateComment/ModalCreateComment";
 
 import { Form, Input, Button } from "@heroui/react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-import ModalUpdatePost from "../ModalUpdatePost/ModalUpdatePost";
+// import ModalUpdatePost from "../ModalUpdatePost/ModalUpdatePost";
 
 import img from "../../assets/images/personPhoto.webp"
-import { UserContext } from "../../Context/UserContext";
+// import { UserContext } from "../../Context/UserContext";
 
 
 export default function Home() {

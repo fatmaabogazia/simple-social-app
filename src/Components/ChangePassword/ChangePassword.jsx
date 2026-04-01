@@ -1,6 +1,5 @@
 
 import { useForm } from 'react-hook-form';
-import style from './ChangePassword.module.css'
 
 import {
     Modal,
@@ -20,9 +19,9 @@ import { useContext } from 'react';
 import { UserContext } from '../../Context/UserContext';
 
 export default function ChangePassword() {
-    let query = useQueryClient()
+    // let query = useQueryClient()
     let route = useNavigate();
-    let {userLogin, setUserLogin} = useContext(UserContext)
+    let {setUserLogin} = useContext(UserContext)
 
     const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
 
