@@ -30,9 +30,10 @@ function App() {
     {
       path: "", element: <Layout />, children: [
         {
-          index: true, element: <ProutectedRoute>
-            <Home />
-          </ProutectedRoute>
+          index: true, element:
+            <ProutectedRoute>
+              <Home />
+            </ProutectedRoute>
         },
         { path: "login", element: <Login /> },
         { path: "register", element: <Register /> },
@@ -66,7 +67,7 @@ function App() {
 
                 <RouterProvider router={route}> </RouterProvider>
                 <Toaster />
-                
+
                 <ReactQueryDevtools></ReactQueryDevtools>
 
               </QueryClientProvider>

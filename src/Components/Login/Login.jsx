@@ -39,11 +39,13 @@ export default function Login() {
         setIsLoadingFlag(true);
 
         axios.post("https://route-posts.routemisr.com/users/signin", values).then((res) => {
-            if (res.data.success == true) {
+            console.log(res);
+            
+            if (res.data.success === true) {
                 navigate("/");
                 setIsLoadingFlag(false);
                 localStorage.setItem("userToken", res.data.data.token);
-                setUserLogin(res.data.token)
+                setUserLogin(res.data.data.token)
             }
 
         }).catch((err) => {

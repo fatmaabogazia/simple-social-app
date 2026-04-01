@@ -83,10 +83,12 @@ export default function NavBar() {
                                 signout()
                             }}>Sign out</DropdownItem>
                         </DropdownMenu>
-                    </Dropdown> : <ul className='flex gap-3 text-white'>
-                        <NavbarItem as={Link} to={"/login"}> Login </NavbarItem>
-                        <NavbarItem as={Link} to={"/register"}> Register </NavbarItem>
-                    </ul>}
+                    </Dropdown>
+                        :
+                        <ul className='flex gap-3 text-white'>
+                            <NavbarItem as={Link} to={"/login"}> Login </NavbarItem>
+                            <NavbarItem as={Link} to={"/register"}> Register </NavbarItem>
+                        </ul>}
 
                 </NavbarContent>
 

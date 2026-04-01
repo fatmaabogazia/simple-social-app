@@ -16,6 +16,7 @@ import toast from "react-hot-toast";
 import ModalUpdatePost from "../ModalUpdatePost/ModalUpdatePost";
 
 import img from "../../assets/images/personPhoto.webp"
+import { UserContext } from "../../Context/UserContext";
 
 
 export default function Home() {
@@ -94,6 +95,8 @@ export default function Home() {
     // console.log(data?.data?.data.posts);
     // console.log(isLoading);
     // console.log(posts?.length > 0);
+
+
 
     if (isError) {
         return <h3 className="text-red-400 text-center ">{error.message} </h3>
